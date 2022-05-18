@@ -20,6 +20,8 @@
     <h2>{{post.title}}</h2>
     <h4>{{post.author}}</h4>
     <p>{{post.content}}</p>
+    <a href="{{ url_for('del_post', i=post.id) }}">Delete</a>
+    <a href="{{ url_for('edit_post', i=post.id)}}">Edit</a>
     <br><hr>
   {% endfor %}
 </body>
